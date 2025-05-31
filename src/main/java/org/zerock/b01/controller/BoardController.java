@@ -15,6 +15,7 @@ import org.zerock.b01.dto.PageRequestDTO;
 import org.zerock.b01.dto.PageResponseDTO;
 import org.zerock.b01.service.BoardService;
 
+
 @Controller
 @RequestMapping("/board")
 @Log4j2
@@ -33,6 +34,8 @@ public class BoardController {
 
     @GetMapping("/list")
     public void list(PageRequestDTO pageRequestDTO, Model model) {
+
+//        PageResponseDTO<BoardDTO> responseDTO = boardService.list(pageRequestDTO);
 
         PageResponseDTO<BoardDTO> responseDTO = boardService.list(pageRequestDTO);
 
