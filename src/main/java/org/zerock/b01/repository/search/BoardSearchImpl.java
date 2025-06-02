@@ -117,7 +117,7 @@ public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardS
                 board.bno,
                 board.title,
                 board.writer,
-                board.regdate,
+                board.regDate,
                 reply.count().as("replyCount")
         ));
 
